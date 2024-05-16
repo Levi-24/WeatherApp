@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="lbx_adat" Margin="30,40,470,125" SelectionChanged="lbx_adat_SelectionChanged"/>
+        <Button x:Name="btnFelvesz" Content="Hozzáad" HorizontalAlignment="Left" Margin="665,39,0,0" VerticalAlignment="Top" Height="60" Width="95" Click="btnFelvesz_Click"/>
+
+        <TextBox x:Name="txbNev" HorizontalAlignment="Left" Margin="385,40,0,0" TextWrapping="Wrap" Text="Név" VerticalAlignment="Top" Width="170" Height="49"/>
+        <TextBox x:Name="txbSzel" HorizontalAlignment="Left" Margin="385,327,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="170" Height="50"/>
+        <TextBox x:Name="txbPara" HorizontalAlignment="Left" Margin="385,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Text="1" Height="54"/>
+        <TextBox x:Name="txbHo" HorizontalAlignment="Left" Margin="385,139,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="170" Height="55"/>
+
+        <Button x:Name="btnDel" Content="Törlés" HorizontalAlignment="Left" Margin="668,157,0,0" VerticalAlignment="Top" Height="60" Width="90" Click="btnDel_Click"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="385,9,0,0" VerticalAlignment="Top"/>
+        <Label Content="Temp C˙" HorizontalAlignment="Left" Margin="385,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="Humidity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="385,203,0,0"/>
+        <Label Content="Wind m/s" HorizontalAlignment="Left" Margin="385,296,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
